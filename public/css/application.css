@@ -41,13 +41,28 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover,
-input[type="submit"]:active,
-input[type="submit"]:focus {
+input[type="submit"]:active {
     background-color: #fff;
     color: #B40D41;
     font-weight: 200;
     border: 1px solid #B40D41;
     outline-width: 0;
+}
+
+#tags {
+    padding: 0px 20px;
+}
+
+#tags ul {
+    list-style: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#tags li {
+    margin-bottom: 10px;
+    font-size: 18px;
 }
 
 pre.prettyprint {
@@ -58,18 +73,24 @@ pre.prettyprint {
 
 #scraper {
     text-align: center;
+    margin-top:50px;
+    margin-bottom:20px;
 }
 
 #source, #tags {
-    float:left;
+    float: right;
 }
 
 #source {
     width: 70%;
 }
 
+#tags {
+    width: 20%;
+}
+
 .container {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -77,3 +98,5 @@ pre.prettyprint {
     background-color: yellow;
     font-weight: bold;
 }
+
+
