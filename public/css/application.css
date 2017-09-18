@@ -1,12 +1,71 @@
-#scrollable-source {
-    width: 100%;
-    height: 200px;
-    overflow: scroll;
-    margin: 5% 0;
-    word-wrap: break-word;
-    white-space: -moz-pre-wrap;
-    white-space: pre-wrap;
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #50535e;
+}
+
+h1 {
+    font-weight: 200;
+    font-size: 48px;
+    text-align: center;
+}
+
+input[type="url"], input[type="text"] {
+    box-sizing: border-box;
+    height: 3.5rem;
     padding: 20px;
+    background: #FFF 20px 50% no-repeat;
+    border: 1px solid #ddd;
+    outline: none;
+    font-size: 18px;
+    line-height: 1.2rem;
+    font-weight: 300;
+    color: #292E31;
+    text-rendering: optimizeLegibility;
+    transition: border-color,box-shadow;
+    transition-duration: 400ms;
+    -webkit-appearance: textfield;
+    -moz-appareance: textfield;
+    -ms-appareance: textfield;
+    appearance: textfield;
+}
+
+input[type="submit"] {
+    box-sizing: border-box;
+    background-color: #B40D41;
+    color: #fff;
+    border:1px solid #fff;
+    height: 3.65rem;
+    padding: 20px;
+    font-weight: 200;
+    transition: all .5s ease-in-out;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:active,
+input[type="submit"]:focus {
+    background-color: #fff;
+    color: #B40D41;
+    font-weight: 200;
+    border: 1px solid #B40D41;
+    outline-width: 0;
+}
+
+pre.prettyprint {
+    border: 1px solid #ddd!important;
+    padding: 20px!important;
+    white-space: pre-wrap;
+}
+
+#scraper {
+    text-align: center;
+}
+
+#source, #tags {
+    float:left;
+}
+
+#source {
+    width: 70%;
 }
 
 .container {
