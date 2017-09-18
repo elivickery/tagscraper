@@ -107,6 +107,20 @@ pre.prettyprint {
     font-weight: bold;
 }
 
+@media(max-width:820px) {
+    .container {
+        padding: 0 50px;
+    }
 
+    #source, #tags {
+        width: 100%;
+        float: none;
+    }
+
+    #tags {
+        height: 200px;
+        overflow: scroll;
+    }
+}
 
 
