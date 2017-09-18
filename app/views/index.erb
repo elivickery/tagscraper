@@ -1,6 +1,7 @@
-<section>
+<section id="scraper">
     <form action="/scrape">
-        <input type="text" placeholder="http://www.google.com" name="url"/>
+        <input type="url" placeholder="http://www.google.com" name="url" required oninvalid="this.setCustomValidity('Enter a URL starting with http:// or https://')"
+    oninput="setCustomValidity('')"/>
         <input type="submit" value="Go!"/>
     </form>
 </section>
@@ -8,7 +9,7 @@
 <% if @source %>
     <section id="source">
         <pre class="prettyprint" lang-html>
-            <%= @source %>
+                <%= @source %>
         </pre>
     </section>
 <% end %>
