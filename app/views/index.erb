@@ -1,4 +1,24 @@
-<form action="/">
-    <input type="text" name="url"/>
-    <input type="submit" value="Go!"/>
-</form>
+<section>
+    <form action="/scrape">
+        <input type="text" placeholder="http://www.google.com" name="url"/>
+        <input type="submit" value="Go!"/>
+    </form>
+</section>
+
+<% if @source %>
+    <section id="source">
+        <pre>
+            <%= @source %>
+        </pre>
+    </section>
+<% end %>
+
+<% if @tag_counts %>
+    <section id="tags">
+        <ul id="tag-list">
+            <% @tag_counts.each do |tag, count| %>
+                <li>&#60;<%= tag %>&#62;: <%= count %></li>
+            <% end %>
+        </ul>
+    </section>
+<% end %>
