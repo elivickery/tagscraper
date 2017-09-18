@@ -1,4 +1,14 @@
-<form action="/">
-    <input type="text" name="url"/>
-    <input type="submit" value="Go!"/>
-</form>
+<section>
+    <form action="/scrape">
+        <input type="text" placeholder="http://www.google.com" name="url"/>
+        <input type="submit" value="Go!"/>
+    </form>
+</section>
+
+<% if @source %>
+    <section id="source">
+        <pre>
+            <%= @source %>
+        </pre>
+    </section>
+<% end %>
