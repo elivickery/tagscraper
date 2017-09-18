@@ -1,3 +1,5 @@
+require 'sinatra/json'
+
 get '/' do
     erb :index
 end
@@ -10,5 +12,15 @@ get '/scrape' do
     @tag_counts = Hash.new(0)
     tag_arr.each { |tag| @tag_counts[tag] += 1}
 
-    erb :index
+    if request.xhr?
+
+        response = {
+            source: @source,
+            tags: @tag_counts
+        }
+
+        erb :_results, :layout => false
+    else
+        erb :index
+    end
 end
