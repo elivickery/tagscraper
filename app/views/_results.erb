@@ -1,0 +1,19 @@
+<% if @tag_counts && @tag_counts.length > 0 %>
+    <section id="tags">
+        <p>Click on a tag to highlight it in the code.</p>
+        <ul id="tag-list">
+            <% @tag_counts.each do |tag, count| %>
+                <li>&#60;<span><%= tag %></span>&#62;: <%= count %></li>
+            <% end %>
+        </ul>
+    </section>
+<% end %>
+
+<% if @source %>
+    <section id="source">
+        <pre class="prettyprint" lang-html>
+            <%= @source %>
+        </pre>
+    </section>
+<% end %>
+
