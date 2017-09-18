@@ -1,4 +1,20 @@
+#scrollable-source {
+    width: 100%;
+    height: 200px;
+    overflow: scroll;
+    margin: 5% 0;
+    word-wrap: break-word;
+    white-space: -moz-pre-wrap;
+    white-space: pre-wrap;
+    padding: 20px;
+}
+
 .container {
     max-width: 800px;
     margin: 0 auto;
+}
+
+.highlighted {
+    background-color: yellow;
+    font-weight: bold;
 }
