@@ -99,6 +99,7 @@ DEPENDENCIES
   capybara
   factory_girl
   faker
+  nokogiri
   pg
   pry-byebug
   rack-test
